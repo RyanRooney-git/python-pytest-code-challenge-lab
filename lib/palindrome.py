@@ -12,6 +12,7 @@ def longest_palindromic_substring(s):
         while left >= 0 and right < len(s) and s[left] == s[right]:
             left -= 1
             right += 1
+
         return left + 1, right - 1
 
     for index in range(len(s)):
